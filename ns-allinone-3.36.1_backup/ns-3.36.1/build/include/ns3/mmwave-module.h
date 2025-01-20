@@ -1,0 +1,65 @@
+#ifdef NS3_MODULE_COMPILATION 
+    error "Do not include ns3 module aggregator headers from other modules these are meant only for end user scripts." 
+#endif 
+#ifndef NS3_MODULE_MMWAVE
+    // Module headers: 
+    #include <ns3/mmwave-helper.h>
+    #include <ns3/mmwave-phy-trace.h>
+    #include <ns3/mmwave-point-to-point-epc-helper.h>
+    #include <ns3/mmwave-bearer-stats-calculator.h>
+    #include <ns3/mc-stats-calculator.h>
+    #include <ns3/core-network-stats-calculator.h>
+    #include <ns3/mmwave-bearer-stats-connector.h>
+    #include <ns3/mmwave-mac-trace.h>
+    #include <ns3/mmwave-net-device.h>
+    #include <ns3/mmwave-enb-net-device.h>
+    #include <ns3/mmwave-ue-net-device.h>
+    #include <ns3/mmwave-phy.h>
+    #include <ns3/mmwave-enb-phy.h>
+    #include <ns3/mmwave-ue-phy.h>
+    #include <ns3/mmwave-spectrum-phy.h>
+    #include <ns3/mmwave-spectrum-value-helper.h>
+    #include <ns3/mmwave-interference.h>
+    #include <ns3/mmwave-chunk-processor.h>
+    #include <ns3/mmwave-mac.h>
+    #include <ns3/mmwave-phy-mac-common.h>
+    #include <ns3/mmwave-mac-scheduler.h>
+    #include <ns3/mmwave-control-messages.h>
+    #include <ns3/mmwave-spectrum-signal-parameters.h>
+    #include <ns3/mmwave-radio-bearer-tag.h>
+    #include <ns3/mmwave-amc.h>
+    #include <ns3/mmwave-mac-sched-sap.h>
+    #include <ns3/mmwave-mac-csched-sap.h>
+    #include <ns3/mmwave-phy-sap.h>
+    #include <ns3/mmwave-enb-mac.h>
+    #include <ns3/mmwave-ue-mac.h>
+    #include <ns3/mmwave-rrc-protocol-ideal.h>
+    #include <ns3/mmwave-lte-rrc-protocol-real.h>
+    #include <ns3/mmwave-mac-pdu-header.h>
+    #include <ns3/mmwave-mac-pdu-tag.h>
+    #include <ns3/mmwave-harq-phy.h>
+    #include <ns3/mmwave-flex-tti-mac-scheduler.h>
+    #include <ns3/mmwave-flex-tti-maxweight-mac-scheduler.h>
+    #include <ns3/mmwave-flex-tti-maxrate-mac-scheduler.h>
+    #include <ns3/mmwave-flex-tti-pf-mac-scheduler.h>
+    #include <ns3/mmwave-propagation-loss-model.h>
+    #include <ns3/mc-ue-net-device.h>
+    #include <ns3/mmwave-component-carrier.h>
+    #include <ns3/mmwave-component-carrier-ue.h>
+    #include <ns3/mmwave-component-carrier-enb.h>
+    #include <ns3/mmwave-no-op-component-carrier-manager.h>
+    #include <ns3/mmwave-beamforming-model.h>
+    #include <ns3/beamforming-codebook.h>
+    #include <ns3/file-beamforming-codebook.h>
+    #include <ns3/mmwave-error-model.h>
+    #include <ns3/mmwave-lte-mi-error-model.h>
+    #include <ns3/mmwave-eesm-cc-t1.h>
+    #include <ns3/mmwave-eesm-cc-t2.h>
+    #include <ns3/mmwave-eesm-cc.h>
+    #include <ns3/mmwave-eesm-error-model.h>
+    #include <ns3/mmwave-eesm-ir-t1.h>
+    #include <ns3/mmwave-eesm-ir-t2.h>
+    #include <ns3/mmwave-eesm-ir.h>
+    #include <ns3/mmwave-eesm-t1.h>
+    #include <ns3/mmwave-eesm-t2.h>
+#endif 
